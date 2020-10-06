@@ -1,0 +1,24 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+// abstracts
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+// components
+@import "./components/nav";
+@import "./components/spinner";
+@import "./components/filters";
+
+// pages
+@import "./pages/home";
+@import "./pages/search";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";

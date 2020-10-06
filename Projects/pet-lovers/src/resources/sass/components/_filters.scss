@@ -1,0 +1,15 @@
+.filter {
+    &--show {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        animation: transitionSlideShow 0.5s ease-out;
+    }
+
+    &--hide {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        animation: transitionSlideHide 0.5s ease-out;
+    }
+}

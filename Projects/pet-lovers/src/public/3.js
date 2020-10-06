@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{35:function(n,e,t){"use strict";t.r(e);var o=t(0),a=t.n(o);e.default=function(){return document.title="PageNotFound",a.a.createElement(o.Fragment,null,"Hola 404")}}}]);

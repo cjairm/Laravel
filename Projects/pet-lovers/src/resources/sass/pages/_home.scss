@@ -1,0 +1,53 @@
+.home {
+    height: 100vh;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)
+        ),
+        url(/img/main.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    @include responsiveImage(big) {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8)
+            ),
+            url(/img/main-2x.jpg);
+    }
+
+    @include responsiveImage(small) {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8)
+            ),
+            url(/img/main-.5x.jpg);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+
+        @include mediaQuery(tablet-p) {
+            top: 4rem;
+            left: 4rem;
+        }
+    }
+
+    &__logo {
+        height: 6rem;
+
+        @include mediaQuery(tablet-p) {
+            height: 10rem;
+        }
+    }
+
+    &__text-box {
+        @include centerAbsolute;
+    }
+}

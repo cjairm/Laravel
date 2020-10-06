@@ -1,0 +1,37 @@
+@mixin centerAbsolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin responsiveImage($breakpoint) {
+    @if $breakpoint == big {
+        @media only screen and (min-resolution: 192dpi) and (min-width: 62.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 62.5em),
+            only screen and (min-width: 118.75em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == small {
+        @media only screen and (max-width: 25em) {
+            @content;
+        }
+    }
+}
+
+@mixin mediaQuery($breakpoint) {
+    @if $breakpoint == tablet-p {
+        @media only screen and (min-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == tablet-l {
+        @media only screen and (min-width: 56.25em) { @content };
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+}
